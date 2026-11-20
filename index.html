@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05030b">
+<title>ENTRELINHAS — Coach de Conversas e Respostas</title>
+<meta property="og:image" content="assets/Referencia.entrelinhas.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="cfgWarn" class="cfgwarn" hidden>Supabase ainda não configurado. Edite <b>config.js</b> (veja o README).</div>
+
+<main id="landing" class="stage">
+  <img class="portrait" src="assets/retrato.jpg" alt="" aria-hidden="true">
+  <section class="hero">
+    <img class="logo" src="assets/logo.png" alt="ENTRELINHAS — Coach de Conversas e Respostas">
+    <h1>Entenda o que não foi dito.<br><em>Responda com estratégia.</em></h1>
+    <p class="lead">O <b>Entrelinhas</b> é seu aliado inteligente para analisar mensagens, decifrar intenções e criar respostas estratégicas em qualquer conversa.</p>
+    <ul class="feats">
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M7 7l10 10M17 7 7 17"/></svg>Análise<br>Inteligente</li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Respostas<br>Estratégicas</li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 20V12M10 20V6M15 20v-8M20 20V9"/></svg>Simulador<br>de Reações</li>
+      <li><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Seus Dados<br>Protegidos</li>
+    </ul>
+    <div class="tagline"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>Comunicação inteligente.<br>Decisões mais seguras.</span></div>
+  </section>
+
+  <aside class="card">
+    <img class="cardlogo" src="assets/logo-card.png" alt="ENTRELINHAS">
+
+    <div data-view="home">
+      <h2>Bem-vindo de volta!</h2>
+      <p class="sub">Entre na sua conta e continue sua jornada.</p>
+      <button class="btn primary" data-go="login" type="button">Entrar</button>
+      <button class="btn ghost" data-go="signup" type="button">Cadastrar</button>
+      <div class="or"><span>Ou continue com</span></div>
+      <div class="social">
+        <button type="button" data-oauth="google" aria-label="Continuar com Google"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.700A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.200 13.600a6 6 0 0 1 0-3.800V7.100H2.700a10 10 0 0 0 0 9.200z"/><path fill="#EA4335" d="M12 6c1.500 0 2.900.5 4 1.600l3-3A10 10 0 0 0 2.700 7.100l3.500 2.700C7 7.800 9.300 6 12 6z"/></svg></button>
+        <button type="button" data-oauth="github" aria-label="Continuar com GitHub"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-3.200 19.500c.5.1.7-.2.7-.5v-1.800c-2.800.6-3.400-1.200-3.400-1.200-.5-1.200-1.100-1.500-1.100-1.500-.9-.6.1-.6.1-.6 1 .1 1.500 1 1.500 1 .9 1.500 2.400 1.100 2.900.8.1-.7.4-1.100.7-1.400-2.200-.3-4.600-1.100-4.600-5 0-1.100.4-2 1-2.700-.1-.3-.4-1.300.1-2.700 0 0 .8-.3 2.800 1a9.600 9.600 0 0 1 5 0c1.900-1.300 2.800-1 2.800-1 .5 1.400.2 2.400.1 2.700.6.700 1 1.600 1 2.700 0 3.900-2.400 4.700-4.600 5 .4.300.7.900.7 1.800v2.700c0 .3.200.6.700.5A10 10 0 0 0 12 2z"/></svg></button>
+        <button type="button" data-oauth="azure" aria-label="Continuar com Microsoft"><svg viewBox="0 0 24 24"><path fill="#F25022" d="M3 3h8.500v8.500H3z"/><path fill="#7FBA00" d="M12.500 3H21v8.500h-8.500z"/><path fill="#00A4EF" d="M3 12.500h8.500V21H3z"/><path fill="#FFB900" d="M12.500 12.500H21V21h-8.500z"/></svg></button>
+      </div>
+      <p class="safe">🔒 Seus dados estão seguros conosco.</p>
+    </div>
+
+    <form data-view="login" data-form="login" novalidate hidden>
+      <h2>Entrar</h2><p class="sub">Acesse sua conta.</p>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+      <label>Senha<input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="note" role="alert"></p>
+      <button class="btn primary" type="submit">Entrar</button>
+      <button class="link" type="button" data-go="forgot">Esqueci minha senha</button>
+      <button class="link" type="button" data-go="signup">Ainda não tenho conta</button>
+      <button class="link" type="button" data-go="home">← Voltar</button>
+    </form>
+
+    <form data-view="signup" data-form="signup" novalidate hidden>
+      <h2>Criar conta</h2><p class="sub">Comece sua jornada no Entrelinhas.</p>
+      <label>Nome<input name="name" type="text" autocomplete="name" maxlength="80" required></label>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+      <label>Senha (mín. 8 caracteres)<input name="password" type="password" autocomplete="new-password" required></label>
+      <label>Confirmar senha<input name="confirm" type="password" autocomplete="new-password" required></label>
+      <p class="note" role="alert"></p>
+      <button class="btn primary" type="submit">Cadastrar</button>
+      <button class="link" type="button" data-go="login">Já tenho conta</button>
+      <button class="link" type="button" data-go="home">← Voltar</button>
+    </form>
+
+    <form data-view="forgot" data-form="forgot" novalidate hidden>
+      <h2>Recuperar senha</h2><p class="sub">Enviaremos um link para o seu e-mail.</p>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+      <p class="note" role="alert"></p>
+      <button class="btn primary" type="submit">Enviar link</button>
+      <button class="link" type="button" data-go="login">← Voltar ao login</button>
+    </form>
+
+    <form data-view="reset" data-form="reset" novalidate hidden>
+      <h2>Nova senha</h2><p class="sub">Defina sua nova senha.</p>
+      <label>Nova senha<input name="password" type="password" autocomplete="new-password" required></label>
+      <label>Confirmar senha<input name="confirm" type="password" autocomplete="new-password" required></label>
+      <p class="note" role="alert"></p>
+      <button class="btn primary" type="submit">Salvar nova senha</button>
+    </form>
+  </aside>
+
+  <footer class="foot">
+    <span><b>ENTRELINHAS</b> • Inteligência Comunicacional &amp; Estratégia de Respostas</span>
+    <nav><button type="button" data-info="privacy">Privacidade</button><button type="button" data-info="terms">Termos de Uso</button><button type="button" data-info="support">Suporte</button></nav>
+  </footer>
+</main>
+
+<div id="app" class="shell" hidden>
+  <header class="top"><button id="menuBtn" type="button" aria-label="Abrir menu">☰</button><b>ENTRELINHAS</b></header>
+  <div id="scrim"></div>
+  <nav class="side" id="side">
+    <img src="assets/logo-card.png" alt="ENTRELINHAS" class="sidelogo">
+    <button data-nav="overview" class="on">Visão geral</button>
+    <button data-nav="studio">Estúdio de análise</button>
+    <button data-nav="sim">Simulador de reação</button>
+    <button data-nav="vault">Cofre de scripts</button>
+    <button data-nav="radar">Radar e histórico</button>
+    <button data-nav="plans">Planos e assinatura</button>
+    <button data-nav="profile">Perfil e configurações</button>
+    <button id="logout" class="out" type="button">Sair</button>
+  </nav>
+  <main class="content">
+    <section data-sec="overview">
+      <h1 id="hello">Olá!</h1>
+      <p class="sub">Seu painel está pronto. Estúdio e Simulador já funcionam; o restante chega nas próximas etapas.</p>
+      <div class="grid">
+        <button class="tile" data-nav="studio"><b>Estúdio de análise</b><span>Disponível</span></button>
+        <button class="tile" data-nav="sim"><b>Simulador de reação</b><span>Disponível</span></button>
+        <button class="tile" data-nav="vault"><b>Cofre de scripts</b><span>Etapa 4</span></button>
+        <button class="tile" data-nav="radar"><b>Radar e histórico</b><span>Etapa 4</span></button>
+      </div>
+    </section>
+    <section data-sec="studio" hidden>
+      <h1>Estúdio de análise</h1>
+      <p class="sub">Cole a mensagem recebida e receba o diagnóstico, as entrelinhas e três respostas prontas.</p>
+      <form id="studioForm" class="tool" novalidate>
+        <div class="row2">
+          <label>Tipo de conversa<select name="conversation_type"><option value="trabalho">Trabalho e liderança</option><option value="relacionamento">Relacionamento</option><option value="familia">Família</option><option value="amizade">Amizade</option><option value="cliente">Cliente e atendimento</option><option value="negociacao">Negociação</option><option value="outros">Outros</option></select></label>
+          <label>Objetivo da resposta<select name="goal"><option value="impor_limite">Impor um limite</option><option value="esclarecer">Esclarecer um mal-entendido</option><option value="reduzir_tensao">Reduzir a tensão</option><option value="negociar">Negociar condições</option><option value="demonstrar_interesse">Demonstrar interesse</option><option value="encerrar">Encerrar a conversa</option><option value="firmeza">Responder com firmeza</option></select></label>
+        </div>
+        <label>Mensagem recebida<textarea name="received_message" rows="5" maxlength="4000" required></textarea><small class="count" data-count="4000">0/4000</small></label>
+        <label>Contexto adicional (opcional)<textarea name="context" rows="3" maxlength="2000"></textarea><small class="count" data-count="2000">0/2000</small></label>
+        <label>Postura desejada (opcional)<input name="stance" maxlength="200" placeholder="ex.: calma, profissional, sem pedir desculpas"></label>
+        <label>Nível de firmeza: <output>3</output> de 5<input type="range" name="firmness" min="1" max="5" value="3"></label>
+        <label>Equilíbrio emocional: <output>3</output> de 5 (1 = acolhedor · 5 = racional)<input type="range" name="emotional_balance" min="1" max="5" value="3"></label>
+        <p class="note" role="alert"></p>
+        <button class="btn primary" type="submit">Analisar mensagem</button>
+        <button class="btn ghost" type="button" id="studioNew">Nova análise</button>
+      </form>
+      <div id="studioOut" class="out-area" aria-live="polite"></div>
+    </section>
+    <section data-sec="sim" hidden>
+      <h1>Simulador de reação</h1>
+      <p class="sub">Descreva a situação e a resposta que pretende enviar. As reações são <b>simulações hipotéticas</b>, não previsões garantidas.</p>
+      <form id="simForm" class="tool" novalidate>
+        <label>Situação<textarea name="situation" rows="4" maxlength="2000" required></textarea><small class="count" data-count="2000">0/2000</small></label>
+        <label>Resposta que pretende enviar<textarea name="planned_reply" rows="4" maxlength="2000" required></textarea><small class="count" data-count="2000">0/2000</small></label>
+        <p class="note" role="alert"></p>
+        <button class="btn primary" type="submit">Simular reação</button>
+        <button class="btn ghost" type="button" id="simNew">Nova simulação</button>
+      </form>
+      <div id="simOut" class="out-area" aria-live="polite"></div>
+    </section>
+    <section data-sec="vault" hidden><h1>Cofre de scripts</h1><p class="sub">Entra na etapa 4, depois do banco de dados (etapa 2).</p></section>
+    <section data-sec="radar" hidden><h1>Radar e histórico</h1><p class="sub">Entra na etapa 4, depois do banco de dados (etapa 2).</p></section>
+    <section data-sec="plans" hidden><h1>Planos e assinatura</h1><p class="sub">Entra na etapa 4. Nenhum pagamento é simulado.</p></section>
+    <section data-sec="profile" hidden>
+      <h1>Perfil e configurações</h1>
+      <p class="sub">Nome: <b id="pfName"></b><br>E-mail: <b id="pfMail"></b></p>
+      <p class="sub">Edição de dados, senha, exportação e exclusão de conta entram na etapa 4.</p>
+    </section>
+  </main>
+</div>
+
+<dialog id="info"><h3 id="infoT"></h3><p id="infoP"></p><button class="btn primary" type="button" id="infoX">Fechar</button></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ia.js"></script>
+</body>
+</html>
